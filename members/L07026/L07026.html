@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的主页</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .container {
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+  }
+  p.desc {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .links a {
+    display: block;
+    padding: 14px;
+    background: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
+  .links a:hover {
+    background: #fff;
+    border-color: #667eea;
+    color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  }
+  footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #aaa;
+  }
+  @media (max-width: 480px) {
+    .container { padding: 30px 20px; }
+    h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="avatar">M</div>
+  <h1>你好，我是小明</h1>
+  <p class="desc">一个热爱技术与设计的创作者，欢迎来到我的个人主页。</p>
+  
+  <div class="links">
+    <a href="#">📝 阅读我的博客</a>
+    <a href="#">💼 查看我的项目</a>
+    <a href="#">✉️ 联系我</a>
+  </div>
+
+  <footer>&copy; 2024 MyPage. All rights reserved.</footer>
+</div>
+
+</body>
+</html>
